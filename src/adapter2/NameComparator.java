@@ -4,16 +4,16 @@ import java.util.Comparator;
 
 import domain.Symptom;
 
-public class NameComparator implements Comparator {
-	
+public class NameComparator implements Comparator<Object> {
+
 
 	@Override
 	public int compare(Object arg0, Object arg1) {
-		
-		Symptom s1 = ((Symptom)arg0).getName();
-		Symptom s2 = ((Symptom)arg1).getName();
-		
-		return 
-			
-		}			
+
+		String s1 = ((Symptom)arg0).getName();
+		String s2 = ((Symptom)arg1).getName();
+
+		return s1.compareTo(s2);
+
+	}
 }
