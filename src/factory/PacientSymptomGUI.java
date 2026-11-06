@@ -29,7 +29,7 @@ public class PacientSymptomGUI extends JFrame {
 	private JLabel lblPacient;
 	private JLabel labelPacient;
 	private JTextField symptonNameField;
-	private JLabel reportLabel;
+	private JLabel reportLabel;	
 
 	
 	/**

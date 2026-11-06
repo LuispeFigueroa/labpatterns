@@ -1,11 +1,11 @@
 package jframeAdapter;
 
+import adapter2.Covid19PacientTableModelAdapter;
+import domain.Covid19Pacient;
+import domain.Symptom;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-
-import domain.Covid19Pacient;
-import domain.Symptom;
 
 	public class Main {
 
@@ -18,7 +18,7 @@ import domain.Symptom;
 			p.addSymptom(new Symptom("s5", 10, 10), 5);
 			
 			
-			Covid19PacientModelAdapter pacientModelAdapter=new Covid19PacientModelAdapter(p);        
+			Covid19PacientTableModelAdapter pacientModelAdapter=new Covid19PacientTableModelAdapter(p);        
 			
 			JFrame j=new JFrame();
 			JTable table = new JTable(pacientModelAdapter);
